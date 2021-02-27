@@ -1,0 +1,336 @@
+* {
+    font-family:Arial;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color:#333;
+}
+
+header {
+    height:100px;
+    display:flex;
+    line-height:60px;
+    justify-content:center;
+    border-bottom:1px solid #CCC;
+}
+
+.container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:1000px;
+    background-color:#2d4a66;
+}
+
+#main {
+    display:flex;
+    justify-content:center;
+}
+
+h1, h5 {
+    color:#FFF;
+    margin:0;
+}
+
+.core {
+    display:flex;
+    justify-content:left;
+    background-color:#444;
+}
+
+.image {
+    display:flex;
+    flex-direction:column;
+}
+
+img {
+    height:350px;
+    padding:20px 50px;
+}
+
+.image_note {
+    line-height:24px;
+    text-align: center;
+    background-color:#2d4a66;
+    margin:0px 10px;
+}
+
+.text {
+    color:#FFF;
+    font-size:16px;
+    line-height:24px;
+    background-color:#2d4a66;
+    padding:4px 20px;
+    text-align:justify;
+    margin:20px 10px 20px 0px;
+}
+
+.row {
+    display:flex;
+    flex-direction:row;
+}
+
+#info {
+    display:flex;
+    justify-content:center;
+}
+
+.achievements {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    background-color:#444;
+    width:1000px;
+}
+
+.tag {
+    color:#FFF;
+    font-weight:bold;
+    padding:10px 10px;
+    background-color:#2d4a66;
+}
+
+.aside {
+    display:flex;
+    width:615px;
+    margin-right:10px;
+    background-color:#444;
+}
+
+.board {
+    display:flex;
+    width:615px;
+    margin:10px 10px 0px 0px;
+    background-color:#2d4a66;
+}
+
+ul {
+    padding:0;
+    margin:5px 20px;
+}
+
+li {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+li div {
+    display:flex;
+    align-items:center;
+    padding:0px 10px;
+    background-color:#CCC;
+    border-bottom:3px solid #F00;
+    color:#333;
+    font-weight:bold;
+    height:27px;
+}
+
+.topics div {
+    margin:10px 0px;
+    width:120px;
+}
+
+.numbers div {
+    margin:10px;
+    justify-content:center;
+    width:50px;    
+}
+
+#more_info {
+    display:flex;
+    justify-content:center;
+}
+
+.end_info {
+    text-align:right;
+    color:#FFF;
+    background-color:#444;
+    width:980px;
+    padding:10px 10px;
+}
+
+a {
+    color:aquamarine;
+}
+
+footer {
+    display:flex;
+    justify-content:center;
+    color:#CCC;
+    border-top:1px solid #CCC;
+    font-size:12px;
+    line-height:27px;
+}
+
+@media (max-width:1000px) {
+    .container {
+        width:768px;
+    }
+    .achievements {
+        width:768px;
+    }
+    .end_info {
+        width:748px;
+    }
+}
+
+@media (max-width:425px) {
+    .container {
+        width:425px;
+    }
+    .achievements {
+        justify-content:center;
+        width:425px;
+    }
+    .core {
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    .text {
+        margin-left:10px;
+    }
+    .aside {
+        width:425px;
+    }
+    .tag {
+        margin-left:20px;
+    }
+    .board {
+        width:405px;
+        margin-left:20px;
+    }
+    ul {
+        font-size:12px;
+    }
+    .topics div {
+        margin:10px 0px;
+        width:90px;
+    }
+    .numbers div {
+        margin:10px;
+        width:30px;
+    }
+    .end_info {
+        width:405px;
+        font-size:12px;
+        text-align:center;
+    }
+    footer {
+        font-size:10px;
+    }
+}
+
+@media (max-width:375px) {
+    header {
+        width:375px;
+    }
+    .container {
+        width:375px;
+    }
+    .achievements {
+        justify-content:center;
+        width:375px;
+    }
+    .core {
+        width:375px;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    img {
+        padding: 20px 40px;
+    }
+    .text {
+        margin-left:10px;
+    }
+    .aside {
+        width:375px;
+    }
+    .tag {
+        margin-left:20px;
+    }
+    .board {
+        width:355px;
+        margin-left:20px;
+    }
+    ul {
+        font-size:12px;
+    }
+    .topics div {
+        margin:10px 0px;
+        width:90px;
+    }
+    .numbers div {
+        margin:10px 5px;
+        width:30px;
+    }
+    .end_info {
+        width:355px;
+        font-size:12px;
+        text-align:center;
+    }
+    footer {
+        width:375px;
+        font-size:10px;
+    }
+}
+
+@media (max-width:320px) {
+    header {
+        width:320px;
+    }
+    .container {
+        width:320px;
+    }
+    .achievements {
+        justify-content:center;
+        width:320px;
+    }
+    .core {
+        width:320px;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    img {
+        padding: 20px 20px;
+    }
+    .text {
+        margin-left:10px;
+    }
+    .aside {
+        width:320px;
+    }
+    .tag {
+        margin-left:20px;
+    }
+    .board {
+        width:300px;
+        margin-left:20px;
+    }
+    ul {
+        font-size:12px;
+    }
+    .topics, .numbers {
+        margin:5px 10px;
+    }
+    .topics div {
+        margin:10px 0px;
+        width:90px;
+    }
+    .numbers div {
+        margin:10px 5px;
+        width:20px;
+    }
+    .end_info {
+        width:300px;
+        font-size:10px;
+        text-align:center;
+    }
+    footer {
+        width:320px;
+        font-size:10px;
+    }
+}
